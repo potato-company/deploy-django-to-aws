@@ -120,7 +120,7 @@ git rebase -i
 git commit --amend --reset-author
 :wq
 ```
-3. Then try pushing again git push. It should work now.
+3. Then try pushing again: `git push`. It should work now.
 
 ## Setup RDS
 TODO
