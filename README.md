@@ -36,7 +36,7 @@ ex: `git clone https://github.com/django-ve/django-helloworld`
 19. Go to your site's **Public IPv4 address** as it is shown on the details of your AWS EC2 instance with port 80 appended to it. Ex: `34.201.63.11:80`. Verify a page loads
 20. Now check that port 8000 is working and that the project is loading by binding gunicorn to your port 8000: `gunicorn --bind 0.0.0.0:8000 helloworld.wsgi:application` then navigate to your site at that address. Ex: `http://34.201.63.11:8000/`.
   IF you get a console error, make sure you are still in the `/django-helloworld` directory.
-  IF you get a DISALLOWEDHOSTS at that address, you have to `cd` into the `settings.py` for that folder `helloworld` and then add ex. `34.201.63.11` to the list of supporting hosts. Will look like: `ALLOWED_HOSTS = ['34.201.63.11', 'ec2-34-201-63-11.compute-1.amazonaws.com']`.
+  IF you get a DISALLOWEDHOSTS at that address, you have to `cd` into the `settings.py` for that folder `helloworld` and then add ex. `34.201.63.11` to the list of supporting hosts. Will look like: `ALLOWED_HOSTS = ['34.201.63.11', 'ec2-34-201-63-11.compute-1.amazonaws.com']`. NOTE - by adding the ec2 form of the link will also work if you prefer that over the ip address form.
 
 <img width="670" alt="screenshot of hello world working" src="https://user-images.githubusercontent.com/7783699/111058947-f6a99300-845f-11eb-8392-6403a6787b9b.png">
 
