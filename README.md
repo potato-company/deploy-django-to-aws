@@ -38,6 +38,8 @@ ex: `git clone https://github.com/django-ve/django-helloworld`
   IF you get a console error, make sure you are still in the `/django-helloworld` directory.
   IF you get a DISALLOWEDHOSTS at that address, you have to `cd` into the `settings.py` for that folder `helloworld` and then add ex. `34.201.63.11` to the list of supporting hosts. Will look like: `ALLOWED_HOSTS = [ 34.201.63.11 ]`.
 
+<img width="670" alt="screenshot of hello world working" src="https://user-images.githubusercontent.com/7783699/111058947-f6a99300-845f-11eb-8392-6403a6787b9b.png">
+
 ### Upgrade SQLite version above 3.8.3
 1. Download a recent version of the tarball and place on your system manually or via command line: `wget https://www.sqlite.org/2021/sqlite-autoconf-3350000.tar.gz`
 2. Uncompress the tar file: `tar -xzf sqlite-autoconf-3350000.tar.gz
