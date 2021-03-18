@@ -43,7 +43,7 @@ ex: `git clone https://github.com/django-ve/django-helloworld`
 ### Upgrade SQLite version above 3.8.3
 1. Download a recent version of the tarball and place on your system manually or via command line: `wget https://www.sqlite.org/2021/sqlite-autoconf-3350000.tar.gz`
 2. Uncompress the tar file: `tar -xzf sqlite-autoconf-3350000.tar.gz
-cd sqlite-autoconf-3350000/``
+cd sqlite-autoconf-3350000/`
 3. Configure it: `./configure`. If this fails due to a "no acceptable C compiler found in $PATH", it means you didn't install **GCC** from STEP 3 from the previous section.
 4. Now that it's configured, make it: `sudo make install`.
 5. Next, you need to edit the activate script used to start the virtualenv so that python looks in the right place for the newly installed SQLite. Why do you have to do this? If you do a `python3 -c "import sqlite3; print(sqlite3.sqlite_version)"` you will see the version still says ex. `3.7.17`. This fixes that. Simply add the following line at the top of the file:
