@@ -13,7 +13,7 @@
 4. When connecting to it the first time, to establish fingerprint connecting your key to AWS, type "yes" when prompted.
 5. That's it! If you verify you see the AWS text image, you're in.
 
-## Deploy Django App to EC2 Instance
+## Deploy Django App to EC2 Instance (on Linux)
 1. SSH to EC2 instance: `ssh -i "django-key.pem" ec2-user@ec2-34-201-63-11.compute-1.amazonaws.com`.
 2. Make sure your way of adding and updating packages is most up to date: `sudo yum update`.
 3. Because we are using a minimal version of Linux, it doesn't have gcc (GNU Compiler Collection) so in order to unzip tar files and such, install it: `sudo yum install gcc -y`.
